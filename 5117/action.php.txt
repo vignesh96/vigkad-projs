@@ -1,0 +1,20 @@
+<html>
+<?php
+	$f=$_POST["fname"];
+	$l=$_POST["lname"];
+	$pass=$_POST["pass"];
+	
+	if($f=="")
+	{
+		echo "First name not filled";
+	}
+	if($l=="")
+	{
+		echo "Last name not filled";
+	}
+	if($pass=="")
+	{
+		echo "Password not filled";
+	}
+?>
+</html>

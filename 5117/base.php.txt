@@ -1,0 +1,21 @@
+<html>
+<?php
+	$dbhost='localhost:3036';
+	$dbuser='root';
+	$dbuser='root';
+	$con=mysqli_connect($dbhost,$dbuser,$dbpasswd);
+	if(!$con)
+	{
+		die ('could not connect'.mysqli_error());
+	}
+	$sql='INSERT INTO usertable'.'(username,passwd,actualname)'.'VALUES("test","test","arun")';
+	mysqli_select_db('my_db');
+	$retval=mysqli_query($sql,$con);
+	if(!$retval)
+	{
+		die ('couldnot enter data'.mysqli_error());
+	}
+	echo "entered data successfully";
+	mysqli_close($con);
+?>
+</html>
