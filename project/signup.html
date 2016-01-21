@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>sign up 	</title>
+<script>
+function validateform()
+{
+var x=document.forms["myform"]["M5"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if(atpos<1||dotpos<atpos+2||dotpos+2>x.length)
+{
+alert("not an valid mail id");
+return false;
+}
+}
+</script>
+
+</head>
+
+<body bgcolor="503794">
+<center><img src="logo.png" width="700px" height="100px"></center>
+</head>
+<h2 style="color: red;font-family: Chiller;font-size: 40px" align="center"><center> Ticket Booking Made Easy</center>
+Inassociation with VSV Cinemas</h2>
+<div id="header"  style="background-color: violet;font-size: 40px;color: yellow;width:1500px">
+<p align="center"><a href="home.php" style="hover: yellow;visited: lightblue"> Home </a>&nbsp&nbsp&nbsp
+<a href="signup.html" style="hover: yellow;visited: lightblue"> Register </a>&nbsp&nbsp&nbsp
+<a href="signin.php" style="hover: yellow;visited: lightblue"> Login </a>&nbsp&nbsp&nbsp
+<a href="show.php" style="hover: yellow;visited: lightblue"> Show Timings </a>&nbsp&nbsp&nbsp
+</p>
+</font>
+</div>
+<div id="menu" style="float:left">
+
+</div>
+
+<CENTER><font style="font-family:Times New Roman;font-size:60px;color:white">CREATE YOUR ACCOUNT</CENTER>
+
+<form name="myform" onsubmit="return validateform()" method="post" action="vali.php">
+<b>
+<table cellpadding=12>
+<tr>
+<td>
+<p style="font-family:Cooper;color:yellow;font-size:40px">FirstName:</p></td><td><input type="text" name="fname"></td></tr>
+<tr><td>
+<p style="font-family:Cooper;color:yellow;font-size:40px">LastName:</p></td><td><input type="text" name="lname"></td></tr>
+<tr><td>
+<p style="font-family:Cooper;color:yellow;font-size:40px">UserName:</p></td><td><input type="text" name="uname"></td></tr>
+<tr><td>
+<p style="font-family:Cooper;color:yellow;font-size:40px">Password:</p></td><td><input type="password" name="pass"></td></tr>
+<tr><td>
+<p style="font-family:Cooper;color:yellow;font-size:40px">Gender:</p></td><td><input type="radio" name="gender" value="male"><font style="font-size:30px;color:red">Male<br><input type="radio" name="gender" value="female">Female<br></font></td></tr>
+<tr><td>
+<p style="font-family:Cooper;color:yellow;font-size:40px">ContactNumber:</p></td><td><input type="text" name="no"></td></tr>
+<tr><td>
+<p style="font-family:Cooper;color:yellow;font-size:40px">Email-ID:</p></td><td><input type="text" name="email"></td></tr>
+</table>
+<center><input type="submit" value="Join"></center>
+</form>
+</b>
+</font>
+</body>
+</html> 
