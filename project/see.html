@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<div id="header"  style="background-color:lightblue; height:200px;" float="right">
+<table>
+<tr><th>
+<img align="left" src="download.jpg"  width="190px">
+</th>
+<head>
+<html>
+<head>
+<title>pharmacy management system</title>
+<script>
+function validateform()
+
+{
+ 
+  var x=document.myform.name.value;
+  
+if(x==""||x==null)
+
+  {
+   
+	 alert("enter the name of product");
+  
+	 return false; 
+
+  }
+
+  var x=document.myform.pass.value;
+  
+  if(x=="")
+ 
+ {
+   
+	 alert("enter the ID");
+  
+	 return false;
+   
+ }
+}
+</script>
+
+<th>
+	<font color="red" size="40px">
+		
+		<center> HOSPITAL MANAGEMENT SYSTEM </center>
+	</font>
+	<br>
+	<font color="black" size="5px">
+		<center> >> An Easier Way of your Life << </center>
+	</font>
+</th></tr>
+</table>	
+</head>
+</div>
+<body background="dell.jpg">
+<div id="content" style="color:red;font-size:20px;width:1400px;">
+<a href="things.html"> <font style="font-size:40px"> Go back </font> </a> <br><br><br>
+<br>
+<font style="font-size:70px; padding-top: 25px; padding-right: 50px; padding-bottom: 25px;padding-left: 50px;color:green"><center> See Item </center> </font><br>
+<p style="padding-top: 25px; padding-right: 50px; padding-bottom: 25px;padding-left: 50px;">
+<form name="myform" method="post" onsubmit="return validateform()" action="see.jsp">
+<center>
+<pre>
+<table>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Name of product:</p></td><td><input type="text" name="name"></td></tr> 
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">ID:</td><td><input type="text" name="pass"></p></td></tr>
+</table>
+ <p style="font-family:Cooper;color:red;font-size:20px"><input type="submit" value="View"></p>
+ 
+ 
+ <a href="things.html">Back</a>
+ </center>
+ </form>
+</p>
+<br><br><br><br><br><br><br><br>
+<div id="footer" height="10px" style="background-color:orange;color:red;"> <marquee direction="left">For any details call HMS DeskBoard 044-43053172 or call +919789784265  </marquee> </div> 
+</div>
+</body>
+</html>

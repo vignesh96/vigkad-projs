@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<div id="header"  style="background-color:lightblue; height:200px;" float="right">
+<table>
+<tr><th>
+<img align="left" src="download.jpg"  width="190px">
+</th>
+<head>
+<script>
+
+function validateform()
+
+{
+ 
+  var x=document.myform.name.value;
+  
+if(x==""||x==null)
+
+  {
+   
+	 alert("enter the name");
+	
+	 return false;
+  }
+
+  var y = document.myform.id.value;
+  
+if(y==""||y==null)
+
+  {
+   
+	 alert("enter the ID");
+	
+	 return false;
+  }
+  else if(isNaN(y))
+  {
+	alert("Enter a valid ID");
+	return false;
+  }
+  
+    var z=document.myform.qua.value;
+  
+if(z==""||z==null)
+
+  {
+   
+	 alert("enter the quantity");
+	
+	 return false;
+  }
+  
+  else if(isNaN(z))
+  {
+	alert("Enter quantity in numbers");
+	return false;
+  }
+
+
+  var a = document.myform.brand.value;
+  
+if(a==""||a==null)
+
+  {
+   
+	 alert("enter the brand");
+	
+	 return false;
+  }
+  
+  
+  var b = document.myform.war.value;
+  
+if(b==""||b==null)
+
+  {
+   
+	 alert("enter the Warranty");
+	
+	 return false;
+  }
+  
+ } 
+</script>
+
+<th>
+	<font color="red" size="40px">
+		
+		<center> HOSPITAL MANAGEMENT SYSTEM </center>
+	</font>
+	<br>
+	<font color="black" size="5px">
+		<center> >> An Easier Way of your Life << </center>
+	</font>
+</th></tr>
+</table>	
+</head>
+</div>
+<body background="dell.jpg">
+<table>
+<tr><td>
+ 
+<div id="menu" style="background-color:lightgreen;width:200px;font-size:20px ;height:1020px; color:#CC0099 ;"> 
+<br><br>
+<ul style="list-style-type:square;list-color:red">
+<li> <a href="home.html"> Home Page </a> </li> <br>
+<li> <a href="case.html"> Case Records </a> </li> <br>
+<li> <a href="about.html"> About Us </a> </li> <br>
+<li> <a href="contact.html"> Contacts </a> </li> <br>
+<li> <a href="facilities.html"> Facilities </a> </li> <br> 
+<li> <a href="doctor.html"> Doctor </a> </li> <br>
+<li> <a href="things.html"> Things </a> </li> <br>
+</ul>
+
+</div>
+</td>
+<td>
+<div id="content" style="font-size:20px;width:1200px ;height:1000px;">
+<br>
+<font style="font-size:70px; padding-top: 25px; padding-right: 50px; padding-bottom: 25px;padding-left: 50px;color:#669900"><center> Add Items </center> </font><br>
+<p style="padding-top: 25px; padding-right: 50px; padding-bottom: 25px;padding-left: 50px;color:red;">
+<pre>
+<form name="myform" method="post" onsubmit="return validateform()" action="items.jsp">
+<center>
+<table>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Name of thing:</p></td><td><input type="text" name="name"></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">ID:</p></td><td><input type="text" name="id"></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Quantity:</p></td><td><input type="text" name="qua"></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Brand:</p></td><td><input type="text" name="brand"></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Warranty:</p></td><td><input type="text" name="war"></td></tr>
+</table>
+ <font style="font-family:Cooper;color:red;font-size:20px"><input type="submit" value="Add"></p>
+ <br>
+ <a href="things.html">back</a>
+ </center>
+ </form>
+
+</p>
+
+<br><br><br><br><br><br><br><br>
+</div>
+<div id="footer" height="10px" style="background-color:orange;color:red;"> <marquee direction="left">For any details call HMS DeskBoard 044-43053172 or call +919789784265  </marquee> </div> 
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>																																																																											

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<div id="header"  style="background-color:lightblue; height:200px;" float="right">
+<table>
+<tr><th>
+<img align="left" src="download.jpg"  width="190px">
+</th>
+<head><script>
+
+function validateform()
+
+{
+ 
+  var x=document.myform.name.value;
+  
+if(x==""||x==null)
+
+  {
+   
+	 alert("enter the patientname");
+  
+	 return false; 
+
+  }
+
+  var y=document.myform.idn.value;
+  
+  if(y=="")
+ 
+ {
+   
+	 alert("enter id");
+  
+	 return false;
+   
+ }
+else if(isNaN(y))
+{
+	alert("enter a valid number");
+	return false; 
+}
+
+ var z=document.myform.age.value;
+  
+  if(z=="")
+  {
+	alert("enter age");
+	return false;
+  }
+  else if(isNaN(z)||z<0)
+ 
+ {
+   
+	 alert("enter a valid age");
+  
+	 return false;
+   
+ }
+ var a=document.myform.phone.value;
+  
+  if(a==""){
+		alert("enter phone number");
+		return false;
+  }
+  else if(isNaN(a)||x.length==10)
+ 
+ {
+   
+	 alert("enter a valid phone number");
+  
+	 return false;
+   
+ }
+ var b=document.myform.disease.value;
+  
+  if(b==""||b==NULL)
+ 
+ {
+   
+	 alert("enter the disease");
+  
+	 return false;
+   
+ }
+}
+</script>
+
+<th>
+	<font color="red" size="40px">
+		
+		<center> HOSPITAL MANAGEMENT SYSTEM </center>
+	</font>
+	<br>
+	<font color="black" size="5px">
+		<center> >> An Easier Way of your Life << </center>
+	</font>
+</th></tr>
+</table>	
+</head>
+</div>
+<body background="patient.jpg">
+<table>
+<tr><td>
+ 
+<div id="menu" style="background-color:lightgreen;width:200px;font-size:20px ;height:1280px; color:#CC0099 ;"> 
+<br><br>
+<ul style="list-style-type:square;list-color:red">
+<li> <a href="home.html"> Home Page </a> </li> <br>
+<li> <a href="case.html"> Case Records </a> </li> <br>
+<li> <a href="about.html"> About Us </a> </li> <br>
+<li> <a href="contact.html"> Contacts </a> </li> <br>
+<li> <a href="facilities.html"> Facilities </a> </li> <br> 
+<li> <a href="doctor.html"> Doctor </a> </li> <br>
+</ul>
+
+</div>
+</td>
+<td>
+<div id="content" style="font-size:20px;width:1200px ;height:1300px;">
+<br>
+<font style="font-size:70px; padding-top: 25px; padding-right: 50px; padding-bottom: 25px;padding-left: 50px;color:cyan;"><center> In-Patient Registration </center> </font><br>
+<center><b> 
+<form name="myform" action="addpatient.jsp" method="post" onsubmit="return validateform()">
+<table>
+<tr>
+	<td><p style="font-family:Algerian;color:red;font-size:20px">Patient Name:</p></td>
+	<td><input type="text" name="name">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<td><p style="font-family:Algerian;color:red;font-size:20px">Patient Id:</p></td>
+	<td><input type="text" name="idn">
+</tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+
+<tr>
+	<td><p style="font-family:Algerian;color:red;font-size:20px">Patient Age:</p></td>
+	<td><input type="text" name="age"></td>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<td><p style="font-family:Algerian;color:red;font-size:20px">Sex:</p></td>
+	<td><p style="font-family:Hemi Head;color:blue;font-size:20px"><input type="radio" name="sex" value="male">Male</p>
+	
+	<p style="font-family:Hemi Head;color:blue;font-size:20px">	<input type="radio" name="sex" value="female">Female</p></td>
+</tr>
+	
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr>
+	<td><p style="font-family:Algerian;color:red;font-size:20px">Patient Address:</p></td>
+	<td><textarea name="text"></textarea>  
+	</td>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<td><p style="font-family:Algerian;color:red;font-size:20px">Mobile no:</p></td>
+	<td><input type="text" name="phone"></td>
+	</tr>
+	<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+
+	<tr>
+	<td><p style="font-family:Algerian;color:red;font-size:20px">Blood Group:</p></td>
+		<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
+	<td><p style="font-family:Hemi Head;color:blue;font-size:15px"><input type="radio" name="blood" value="o+">O+
+     <input type="radio" name="blood" value="o-">O-
+		 <input type="radio" name="blood" value="a+">A+
+		  <input type="radio" name="blood" value="a1+">A1+
+		   <input type="radio" name="blood" value="b+">B+
+		    <input type="radio" name="blood" value="b1+">B1+
+			 <input type="radio" name="blood" value="a-">A-
+			  <input type="radio" name="blood" value="a1-">A1-
+			   <input type="radio" name="blood" value="b-">B-
+			    <input type="radio" name="blood" value="b1-">B1-</p>
+			
+	</td>	
+</tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
+<tr>
+	<td><p style="font-family:Algerian;color:red;font-size:20px">Disease:</p></td>
+		<td><input type="text" name="disease">
+		</td>
+		</tr>
+		<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr>
+	<td><p style="font-family:Algerian;color:red;font-size:20px">Patient Family details:</p></td>
+	<td><textarea name="family"></textarea>  
+	</td>
+<tr>	
+</table>
+<b>
+<br>
+<center><input type="submit" value="REGISTER">
+</center>
+</div>
+<br><br><br>
+
+<div id="footer" height="10px" style="background-color:orange;color:red;"> <marquee direction="left">For any details call HMS DeskBoard 044-43053172 or call +919789784265  </marquee> </div> 
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

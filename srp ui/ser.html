@@ -1,0 +1,44 @@
+<html>  
+<head>  
+<script>  
+var request;  
+function sendInfo()  
+{  
+var v=document.vinform.t1.value;  
+var url="action.jsp?val="+v;  
+  
+if(window.XMLHttpRequest){  
+request=new XMLHttpRequest();  
+}  
+else if(window.ActiveXObject){  
+request=new ActiveXObject("Microsoft.XMLHTTP");  
+}  
+  
+try{  
+request.onreadystatechange=getInfo;  
+request.open("GET",url,true);  
+request.send();  
+}catch(e){alert("Unable to connect to server");}  
+}  
+  
+function getInfo(){  
+if(request.readyState==4){  
+var val=request.responseText;  
+document.getElementById('amit').innerHTML=val;  
+}  
+}  
+  
+</script>  
+</head>  
+<body background="assets/images/body1.jpg">  
+    <center><h1>SEARCH YOUR PROBLEMS HERE</h1></center>
+<form name="vinform">  
+<br>
+<br><h2>
+<center>FIND HERE:<input type="text" name="t1" onkeyup="sendInfo()"></h2></center>  
+</form>  
+  
+<center><div id="amit"> </div></center>  
+  
+</body>  
+</html>  

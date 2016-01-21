@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register in our website</title>
+
+        
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+       
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+       
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="home.html">CrowdSourcer</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="Register.html">Register</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="login.html">Login</a>
+                    </li>
+                   
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Register Form</strong></h1>
+                            <div class="description">
+                            	<p>
+	                            	<h3 style="color:white"> <strong> Sign Up with your email </strong> </h3>
+                            	</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        			<h3>Register in our site</h3>
+                            		<p>Enter your details as follows : </p>
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i class="fa fa-lock"></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+			                    <form role="form" action="Register.jsp" method="post" class="login-form">
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="form-username">Username</label>
+			                        	<input type="text" name="uname" placeholder="Username..." class="form-username form-control" id="user">
+			                        </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-registerno">Register Number</label>
+                                        <input type="text" name="reg" placeholder="Register Number..." class="form-registerno form-control" id="register">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-degree">Degree</label>
+                                        <input type="text" name="degree" placeholder="Degree..." class="form-degree form-control" id="deg">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-dept">Department</label>
+                                        <input type="text" name="dept" placeholder="Department..." class="form-department form-control" id="dept">
+                                    </div>
+                                     <div class="form-group">
+                                        <label for="form-gender">Gender</label><br>
+                                       <center><label for="form-gender"><input type="radio" name="gender" class="form-gender form-control" id="gender" value="male"> Male <br></label>
+                                        <br>
+                                       <label for="form-gender"><input type="radio" name="gender" class="form-gender form-control" id="gender" value="female"> Female<br></label>
+                                    </center>
+                                     </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-email">Email-ID</label>
+                                        <input type="text" name="email" placeholder="Email..." class="form-email form-control" id="email">
+                                    </div>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="form-password">Password</label>
+			                        	<input type="password" name="pass" placeholder="Password..." class="form-password form-control" id="pass">
+			                        </div>
+			                        <!--<button type="submit" class="btn">Register</button>-->
+									    <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Register</button>
+                            
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                    
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>

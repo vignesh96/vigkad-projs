@@ -1,63 +1,151 @@
+<!DOCTYPE html>
 <html>
+<div id="header"  style="background-color:lightblue; height:200px;" float="right">
+<table>
+<tr><th>
+<img align="left" src="download.jpg"  width="190px">
+</th>
 <head>
-<title>sign up 	</title>
 <script>
+
 function validateform()
+
 {
-var x=document.forms["myform"]["M5"].value;
-var atpos=x.indexOf("@");
-var dotpos=x.lastIndexOf(".");
-if(atpos<1||dotpos<atpos+2||dotpos+2>x.length)
-{
-alert("not an valid mail id");
-return false;
-}
+ 
+  var x=document.myform.name.value;
+  
+if(x==""||x==null)
+
+  {
+   
+	 alert("enter the name");
+	
+	 return false;
+  }
+
+  var y=document.myform.pass.value;
+  
+  if(y=="")
+ 
+ {
+   
+	 alert("enter a password");
+  
+	 return false;
+   
+ }
+ else if(y.length < 8)
+ {
+	alert("Password to be 8 characters");
+	return false;
+ }
+
+
+ var z=document.myform.addr.value;
+  
+  if(z=="")
+ 
+ {
+   
+	 alert("enter an address");
+     return false;
+   
+ }
+ var a=document.myform.num.value;
+  
+  if(a=="")
+ {
+   
+	 alert("enter an numeric value");
+     return false;
+ }
+ else if(isNaN(a))
+ {
+	alert("Enter a numeric value");
+	return false;
+ }
+ else if(a.length!=10)
+ {
+	alert("Length to be 10 ");
+	return false;
+ }
+ 
+ var b = document.myform.age.value;
+ if(b=="")
+ {
+	alert("Age to be entered");
+	return false;
+ }
+ else if(b<0)
+ {
+	alert("Invalid age");
+	return false;
+ }
+ 
 }
 </script>
 
+<th>
+	<font color="red" size="40px">
+		
+		<center> HOSPITAL MANAGEMENT SYSTEM </center>
+	</font>
+	<br>
+	<font color="black" size="5px">
+		<center> >> An Easier Way of your Life << </center>
+	</font>
+</th></tr>
+</table>	
 </head>
-
-<body bgcolor="503794">
-<center><img src="logo.png" width="700px" height="100px"></center>
-</head>
-<h2 style="color: red;font-family: Chiller;font-size: 40px" align="center"><center> Ticket Booking Made Easy</center>
-Inassociation with VSV Cinemas</h2>
-<div id="header"  style="background-color: violet;font-size: 40px;color: yellow;width:1500px">
-<p align="center"><a href="home.php" style="hover: yellow;visited: lightblue"> Home </a>&nbsp&nbsp&nbsp
-<a href="signup.html" style="hover: yellow;visited: lightblue"> Register </a>&nbsp&nbsp&nbsp
-<a href="signin.php" style="hover: yellow;visited: lightblue"> Login </a>&nbsp&nbsp&nbsp
-<a href="show.php" style="hover: yellow;visited: lightblue"> Show Timings </a>&nbsp&nbsp&nbsp
-</p>
-</font>
 </div>
-<div id="menu" style="float:left">
+<body background="dell.jpg">
+<table>
+<tr><td>
+ 
+<div id="menu" style="background-color:lightgreen;width:200px;font-size:20px ;height:1020px; color:#CC0099 ;"> 
+<br><br>
+<ul style="list-style-type:square;list-color:red">
+<li> <a href="home.html"> Home Page </a> </li> <br>
+<li> <a href="case.html"> Case Records </a> </li> <br>
+<li> <a href="about.html"> About Us </a> </li> <br>
+<li> <a href="contact.html"> Contacts </a> </li> <br>
+<li> <a href="facilities.html"> Facilities </a> </li> <br> 
+<li> <a href="doctor.html"> Doctor </a> </li> <br>
+<li> <a href="things.html"> Things </a> </li> <br>
+</ul>
 
 </div>
-
-<CENTER><font style="font-family:Times New Roman;font-size:60px;color:white">CREATE YOUR ACCOUNT</CENTER>
-
-<form name="myform" onsubmit="return validateform()" method="post" action="vali.php">
-<b>
-<table cellpadding=12>
-<tr>
+</td>
 <td>
-<p style="font-family:Cooper;color:yellow;font-size:40px">FirstName:</p></td><td><input type="text" name="fname"></td></tr>
-<tr><td>
-<p style="font-family:Cooper;color:yellow;font-size:40px">LastName:</p></td><td><input type="text" name="lname"></td></tr>
-<tr><td>
-<p style="font-family:Cooper;color:yellow;font-size:40px">UserName:</p></td><td><input type="text" name="uname"></td></tr>
-<tr><td>
-<p style="font-family:Cooper;color:yellow;font-size:40px">Password:</p></td><td><input type="password" name="pass"></td></tr>
-<tr><td>
-<p style="font-family:Cooper;color:yellow;font-size:40px">Gender:</p></td><td><input type="radio" name="gender" value="male"><font style="font-size:30px;color:red">Male<br><input type="radio" name="gender" value="female">Female<br></font></td></tr>
-<tr><td>
-<p style="font-family:Cooper;color:yellow;font-size:40px">ContactNumber:</p></td><td><input type="text" name="no"></td></tr>
-<tr><td>
-<p style="font-family:Cooper;color:yellow;font-size:40px">Email-ID:</p></td><td><input type="text" name="email"></td></tr>
+<div id="content" style="font-size:20px;width:1200px ;height:1000px;">
+<br>
+<font style="font-size:70px; padding-top: 25px; padding-right: 50px; padding-bottom: 25px;padding-left: 50px;color:#669900"><center> Doctor Register </center> </font><br>
+<p style="padding-top: 25px; padding-right: 50px; padding-bottom: 25px;padding-left: 50px;color:red;">
+<pre>
+<form name="myform" method="post" onsubmit="return validateform()" action="docregister.jsp">
+<center>
+<table>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Name Dr:</p></td><td><input type="text" name="name"></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">ID:</p></td><td><input type="text" name="id"></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">gender:</p></td><td><input type="radio" name="gen" value="male"> Male <input type="radio" value="Female" name="gen"> Female </td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Address:</p></td><td><textarea name="addr"> </textarea></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">age:</p></td><td><input type="text" name="age"></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Service in years:</p></td><td><input type="text" name="service"></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Phone number:</p></td><td><input type="text" name="num"></td></tr>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Password:</p></td><td><input type="password" name="pass"></td></tr>
 </table>
-<center><input type="submit" value="Join"></center>
-</form>
-</b>
-</font>
+ <font style="font-family:Cooper;color:red;font-size:20px"><input type="submit" value="Add"></p>
+ </center>
+ </form>
+
+</p>
+
+<br><br><br><br><br><br><br><br>
+</div>
+<div id="footer" height="10px" style="background-color:orange;color:red;"> <marquee direction="left">For any details call HMS DeskBoard 044-43053172 or call +919789784265  </marquee> </div> 
+</div>
+</td>
+</tr>
+</table>
 </body>
-</html> 
+</html>																																																																											

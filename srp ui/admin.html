@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function Allow()
+	{
+		a = document.form.adminpass.value;
+		
+		if(a=="")
+		{
+			alert("Key is empty");
+			return false;
+		}
+		else if(a!="adminpass")
+		{
+			alert("Incorrect Key");
+			return false;
+		}
+	}
+</script>
+<meta charset="UTF-8">
+<title>ADMIN</title>
+<meta name="description" content="A description of your website">
+<meta name="keywords" content="keyword1, keyword2, keyword3">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="wrapper"> 
+  
+  <div id="header">
+  
+  <div class="banner_img">
+    	<h1><p style="font-size:20px"><p align="center">CrowdSourcing</p></p></h1>
+    
+    </div>
+
+	</div>
+	
+	<div class="navigation">
+      <ul>
+        <li><a href="admin.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>      
+	</ul>
+    </div>
+  
+  
+      
+      <div class="col_1">
+        <h1>Home</h1>
+        <div class="box"></div>
+      </div>
+      
+    </div>    
+  
+  <center><div id="page_content">
+    
+      <div class="common_content">
+        
+        <p><hr>
+      </div>
+
+      <form name="form" action="decide.jsp"  method="post" onsubmit="return Allow()">
+	<br>
+	SecurityKey:<input type="password" name="adminpass" id="keypass" ><br>
+	                         
+        <div class="column_two">
+	<input type="submit" value="LogIn" >
+          <h2> </h2>
+     </form>       
+          <br>
+		  
+        </div>
+      </div>
+    </div>
+    
+    
+  </center>
+  
+   
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<div id="header"  style="background-color:lightblue; height:200px;" float="right">
+<table>
+<tr><th>
+<img align="left" src="download.jpg"  width="190px">
+</th>
+<head>
+<script>
+function validateform()
+
+{
+ 
+  var x=document.myform.name.value;
+  
+if(x==""||x==null)
+
+  {
+   
+	 alert("enter the username");
+  
+	 return false; 
+
+  }
+
+  var x=document.myform.id.value;
+  
+  if(x=="")
+ 
+ {
+   
+	 alert("enter the patient ID");
+  
+	 return false;
+   
+ }
+}
+</script>
+<th>
+	<font color="red" size="40px">
+		
+		<center> HOSPITAL MANAGEMENT SYSTEM </center>
+	</font>
+	<br>
+	<font color="black" size="5px">
+		<center> >> An Easier Way of your Life << </center>
+	</font>
+</th></tr>
+</table>	
+</head>
+</div>
+
+<table>
+<tr><td>
+ 
+<div id="menu" style="background-color:lightgreen;width:200px;font-size:20px ;height:820px; color:#CC0099 ;"> 
+<br><br>
+<ul style="list-style-type:square;list-color:red">
+<li> <a href="home.html"> Home Page </a> </li> <br>
+<li> <a href="case.html"> Case Records </a> </li> <br>
+<li> <a href="about.html"> About Us </a> </li> <br>
+<li> <a href="contact.html"> Contacts </a> </li> <br>
+<li> <a href="facilities.html"> Facilities </a> </li> <br> 
+<li> <a href="doctor.html"> Doctor </a> </li> <br>
+</ul>
+
+</div>
+</td>
+<td>
+<body background="hospital.jpg">
+<div id="content" style="font-size:20px;width:1150px ;height:800px;">
+<br>
+<font style="font-size:70px; padding-top: 25px; padding-right: 50px; padding-bottom: 25px;padding-left: 50px;color:#669900"><center> Patient Records </center> </font><br>
+<p style="padding-top: 25px; padding-right: 50px; padding-bottom: 25px;padding-left: 50px;color:red;">
+<form name="myform" method="post" onsubmit="return validateform()" action="validatesignin.jsp">
+<center>
+<pre>
+<table>
+<form name="myform" method="post" onsubmit="return validateform()" action="validatesignin.jsp">
+<center>
+<pre>
+<table>
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Patient Name:</p></td><td><input type="text" name="name"></td></tr> 
+<tr> <td><p style="font-family:Cooper;color:red;font-size:20px">Patient ID:</td><td><input type="password" name="id"></p></td></tr>
+</table>
+ <p style="font-family:Cooper;color:red;font-size:20px"><input type="submit" value="View"></p>
+ </center>
+</p>
+<br><br><br><br><br><br><br><br>
+</div>
+<div id="footer" height="10px" style="background-color:orange;color:red;"> <marquee direction="left">For any details call HMS DeskBoard 044-43053172 or call +919789784265  </marquee> </div> 
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

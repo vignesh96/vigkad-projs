@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Crowd Sourcing</title>
+
+
+    <link href="home/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="home/css/agency.css" rel="stylesheet">
+
+
+    <link href="home/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
+<script>
+function validateform()
+{
+var x=document.forms["myform"]["mail"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if(atpos<1||dotpos<atpos+2||dotpos+2>x.length)
+{
+alert("not an valid mail id");
+return false;
+}
+var y=document.forms["myform"]["pas"].value;
+var z=document.forms["myform"]["cpas"].value;
+if(y==z)
+{
+}
+else
+{
+	alert("passwords dont match");
+}
+}
+</script>
+</head>
+<body id="page-top" class="index">
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">CrowdSourcer</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="editprofile.html">Edit Profile</a>
+                    </li>
+					<li>
+                        <a href="ser.html">Search</a>
+                    </li>
+					<li>
+                        <a href="noti.jsp">Notifications</a>
+                    </li>
+		
+                    <li>
+                        <a href="post1.html">Post</a>
+                    </li>
+                    <li>
+                        <a href="logout.jsp">LogOut</a>
+                    </li>
+                   
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+<header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Our CrowdSourcing!</div>
+                <div class="intro-heading">A Way To a Solution</div>
+            </div>
+        </div>
+    </header>
+<P ALIGN="RIGHT"></P>
+<CENTER><font style="font-family:Times New Roman;font-size:60px;color:red;">EDIT YOUR PROFILE</CENTER>
+<hr color="yellow"></strong>
+<form name="myform" onsubmit="return validateform()" method="post" action="editprofile.jsp">
+<font face="Bradley Hand ITC" size="5" color="red">
+<b>
+<center><table>
+<tr>
+<td><font style="font-family:Times New Roman;font-size:30px;color:red;">Name</td><td></td>
+<td><input type="text" name="fname"required></td></tr>
+<tr></tr><tr></tr><tr></tr>
+<td><font style="font-family:Times New Roman;font-size:30px;color:red;">Email</td><td></td>
+<td><input type="text" name="mail"required></td></tr>
+<td><font style="font-family:Times New Roman;font-size:30px;color:red;">Password</td><td></td>
+<td><input type="password" name="pas"required></td></tr>
+<td><font style="font-family:Times New Roman;font-size:30px;color:red;">confirm password</td><td></td>
+<td><input type="password" name="cpas"required></td></tr>
+
+</table>
+
+<br>
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;<input type="submit" value="EDIT">
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;<input type="reset" value="RESET">
+</b>
+</center>
+</font>
+</form>
+</body>
+</html>
+
+
+
+ 
